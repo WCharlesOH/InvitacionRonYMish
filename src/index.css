@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────────────────────────
+   Boda Real — Design Tokens (Pearl & Gold)
+   CSS variables mirror tailwind.config
+   ───────────────────────────────────────────────────────────── */
+:root {
+  --pearl: #f5efe7;
+  --sand: #ede4d6;
+  --card: #fcf8f2;
+
+  --ink: #473d31;
+  --ink-soft: #857562;
+
+  --gold: #d4af37;
+  --gold-muted: #c5a059;
+  --champagne: #e5c158;
+  --gold-deep: #7a5f24;
+
+  --stone: #e0d6c7;
+
+  --gold-border: rgba(212, 175, 55, 0.3);
+
+  color-scheme: light;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-ink font-sans antialiased;
+    /* Bold marble backdrop — the "notorious" surface the cream card
+       panels ("cartas") sit on. */
+    background-color: #f0e9dc;
+    background-image:
+      radial-gradient(
+        55rem 40rem at 50% -6%,
+        rgba(212, 175, 55, 0.16),
+        transparent 60%
+      ),
+      url('./assets/marble.svg');
+    background-size: auto, cover;
+    background-position:
+      center top,
+      center center;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+  }
+
+  /* Script font runs tall — give it breathing room so flourishes,
+     ascenders and descenders never clip (esp. with clip-text gold foil). */
+  .font-script {
+    line-height: 1.2;
+  }
+
+  /* Respect reduced-motion preferences */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Metallic gold text — tuned to read on a light pearl surface */
+  .text-gold-foil {
+    background: linear-gradient(
+      100deg,
+      #8a6a1e 0%,
+      #d4af37 26%,
+      #f4dc93 50%,
+      #c69a3f 74%,
+      #8a6a1e 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .text-gold-foil-anim {
+    @apply text-gold-foil animate-shimmer;
+  }
+
+  /* Small-caps section eyebrow */
+  .eyebrow {
+    @apply font-sans uppercase text-xs sm:text-sm font-semibold tracking-luxe text-gold-deep;
+  }
+
+  /* Primary gold CTA */
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-full
+           bg-gold-gradient bg-[length:200%_auto] px-7 py-3
+           font-sans text-sm font-semibold uppercase tracking-wide2
+           text-obsidian transition-all duration-500
+           hover:bg-[position:right_center] hover:shadow-gold-glow
+           focus-visible:outline-none focus-visible:ring-2
+           focus-visible:ring-gold focus-visible:ring-offset-2
+           focus-visible:ring-offset-pearl
+           active:scale-[0.98];
+  }
+
+  /* Secondary outline */
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full
+           border border-gold/60 px-7 py-3 font-sans text-sm font-semibold
+           uppercase tracking-wide2 text-gold-deep transition-all duration-300
+           hover:border-gold hover:bg-gold/10
+           focus-visible:outline-none focus-visible:ring-2
+           focus-visible:ring-gold focus-visible:ring-offset-2
+           focus-visible:ring-offset-pearl
+           active:scale-[0.98];
+  }
+
+  /* Alias kept for backwards compatibility (same as .btn-outline now) */
+  .btn-outline-dark {
+    @apply btn-outline;
+  }
+
+  /* Gold-foil bordered card on pearl */
+  .card-luxe {
+    @apply relative rounded-2xl border border-gold/30 bg-card
+           shadow-card;
+  }
+
+  /* Bright white surface card (extra contrast) */
+  .card-ivory {
+    @apply relative rounded-2xl border border-stone bg-white text-ink
+           shadow-card;
+  }
+
+  /* Thin ornamental divider with center diamond */
+  .divider-ornate {
+    @apply flex items-center justify-center gap-4 text-gold;
+  }
+  .divider-ornate::before,
+  .divider-ornate::after {
+    content: '';
+    @apply h-px w-16 sm:w-24 bg-gradient-to-r from-transparent via-gold/70 to-transparent;
+  }
+}
+
+@layer utilities {
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: 'tnum';
+  }
+  /* Section vertical rhythm */
+  .section-pad {
+    @apply px-5 py-20 sm:px-8 sm:py-28;
+  }
+}
+
+/* ── Custom scrollbar (subtle gold on pearl) ── */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--sand);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--gold-muted), var(--gold));
+  border-radius: 9999px;
+  border: 2px solid var(--sand);
+}
+
+/* Selection */
+::selection {
+  background: rgba(212, 175, 55, 0.3);
+  color: var(--ink);
+}
+
+/* Subtle paper-grain texture (self-contained SVG noise) used as a fixed
+   overlay in App to give the champagne backdrop a tactile, printed feel. */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+/* Marble surface — same backdrop as the body, used to hide content behind
+   the opening envelope overlay. */
+.bg-marble {
+  background-color: #f1eade;
+  background-image: url('./assets/marble.svg');
+  background-size: cover;
+  background-position: center;
+}

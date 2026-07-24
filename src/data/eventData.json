@@ -1,0 +1,164 @@
+{
+  "couple": {
+    "partnerA": "Ron",
+    "partnerB": "Mish",
+    "monogram": "R & M",
+    "initials": "R&M",
+    "hashtag": "#RonYMish"
+  },
+  "photos": {
+    "hero": "images/novios-hero.jpg",
+    "countdownBg": "images/novios-countdown.jpg",
+    "finalBg": "images/novios-final.jpg",
+    "gallery": [
+      "images/novios-1.jpg",
+      "images/novios-2.jpg",
+      "images/novios-3.jpg",
+      "images/novios-4.jpg"
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Nuestra Historia",
+    "title": "Momentos",
+    "subtitle": "Algunos recuerdos que atesoramos en el camino hacia este gran día."
+  },
+  "event": {
+    "name": "Boda Real",
+    "announcement": "¡Nos casamos!",
+    "place": "Huancayo, Provincia de Junín, Perú",
+    "invitationLine": "Con la bendición de Dios y de nuestras familias, tenemos el honor de invitarte a celebrar nuestra unión."
+  },
+  "date": {
+    "iso": "2027-04-24T08:00:00-05:00",
+    "isoLocal": "2027-04-24T08:00:00",
+    "display": "24 de Abril de 2027",
+    "weekday": "Sábado",
+    "time": "Desde las 8:00 AM",
+    "day": "24",
+    "month": "Abril",
+    "year": "2027"
+  },
+  "intro": {
+    "eyebrow": "Nos Casamos",
+    "phrase": "Hay momentos en la vida que son especiales por sí solos, pero compartirlos con las personas que quieres los convierte en momentos inolvidables.",
+    "closing": "Con mucha ilusión queremos vivir este día rodeados de las personas que han formado parte de nuestra historia. Será un honor contar con tu presencia."
+  },
+  "family": {
+    "eyebrow": "Con la bendición de Dios",
+    "line": "y de nuestros queridos padres",
+    "groomParents": {
+      "title": "Padres del Novio",
+      "names": ["Williams Roanld Olivera Acuña", "Jane Hospinal P Escajadillo"]
+    },
+    "brideParents": {
+      "title": "Padres de la Novia",
+      "names": ["Jose Luis Correa Rojas", "Johancil Muñoz Romero"]
+    },
+    "padrinos": {
+      "title": "Padrinos de Boda",
+      "names": ["Alvaro Camborda Landi", "Sharon Olivera Hospinal"]
+    }
+  },
+  "ceremonies": {
+    "eyebrow": "¿Dónde será?",
+    "title": "Nuestras Ceremonias",
+    "subtitle": "Nos encantaría contar contigo en cada momento de este día.",
+    "list": [
+      {
+        "type": "Ceremonia Religiosa",
+        "icon": "church",
+        "time": "8:00 AM",
+        "venue": "Basílica Catedral de Huancayo",
+        "venueSub": "Catedral de la Santísima Trinidad",
+        "address": "Plaza Constitución, Jr. Áncash, Huancayo",
+        "mapsUrl": "https://www.google.com/maps/place/Bas%C3%ADlica+Catedral+de+la+Santisima+Trinidad+-+Arquidi%C3%B3cesis+Metropolitana+de+Huancayo/@-12.0674497,-75.2120888,17z/data=!3m1!4b1!4m6!3m5!1s0x910e964ee11fa63f:0x6f43205f70fd64b4!8m2!3d-12.067455!4d-75.2095139!16s%2Fg%2F121k2kh5?entry=ttu&g_ep=EgoyMDI2MDcyMi4wIKXMDSoASAFQAw%3D%3D",
+        "wazeUrl": "https://waze.com/ul?ll=-12.067455%2C-75.2095139&navigate=yes"
+      },
+      {
+        "type": "Ceremonia Civil",
+        "icon": "rings",
+        "time": "11:00 AM",
+        "venue": "Hotel RN Shullkas Suites",
+        "venueSub": "Salón de eventos",
+        "address": "Huancayo, Provincia de Junín, Perú",
+        "mapsUrl": "https://www.google.com/maps/place/RN+Shullkas+Suites+Hotel/@-12.0940236,-75.194878,17z/data=!3m1!4b1!4m9!3m8!1s0x910e9134539e9521:0xfadf50bc04578ec2!5m2!4m1!1i2!8m2!3d-12.0940236!4d-75.194878!16s%2Fg%2F11swzhdsd8?entry=ttu&g_ep=EgoyMDI2MDcyMi4wIKXMDSoASAFQAw%3D%3D",
+        "wazeUrl": "https://waze.com/ul?ll=-12.0940236%2C-75.194878&navigate=yes"
+      }
+    ]
+  },
+  "itinerary": {
+    "eyebrow": "El gran día",
+    "title": "Itinerario",
+    "items": [
+      { "time": "8:00 AM", "title": "Ceremonia Religiosa", "icon": "church" },
+      { "time": "11:00 AM", "title": "Ceremonia Civil", "icon": "rings" },
+      { "time": "1:30 PM", "title": "Recepción y Almuerzo", "icon": "utensils" },
+      { "time": "3:00 PM", "title": "Baile y Celebración", "icon": "music" }
+    ]
+  },
+  "hotel": {
+    "name": "RN Shullkas Suites Hotel",
+    "eyebrow": "Hospedaje",
+    "tagline": "Recomendado para nuestros invitados que llegan de otras ciudades",
+    "city": "Huancayo, Provincia de Junín, Perú",
+    "phone": "+51 919 295 185",
+    "phoneRaw": "51919295185",
+    "note": "Menciona que vienes por la Boda Real de Ron & Mish al reservar.",
+    "mapsUrl": "https://www.google.com/maps/place/RN+Shullkas+Suites+Hotel/@-12.0940236,-75.194878,17z/data=!3m1!4b1!4m9!3m8!1s0x910e9134539e9521:0xfadf50bc04578ec2!5m2!4m1!1i2!8m2!3d-12.0940236!4d-75.194878!16s%2Fg%2F11swzhdsd8?entry=ttu&g_ep=EgoyMDI2MDcyMi4wIKXMDSoASAFQAw%3D%3D",
+    "whatsappUrl": "https://api.whatsapp.com/send/?phone=51919295185&text&type=phone_number&app_absent=0&wame_ctl=1&fbclid=IwVERDUATQsBpwZG9mBWZkaWQWULL34No-NyTU7UFt8lmeQQpl90kixGV4dG4DYWVtAjEwAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR5bgsNT8IrSTVmudYFCYh-my3nI4xt5h8_1nITckfeAcoay3hz0fImg3e-vNA_aem_8Q5cxc2BW0CRx87Y4eeooA"
+  },
+  "rsvp": {
+    "eyebrow": "RSVP",
+    "title": "Confirmación de Asistencia",
+    "subtitle": "Tu presencia es muy importante para nosotros. Por favor, confírmanos tu asistencia lo antes posible.",
+    "deadline": "Agradecemos confirmar antes del 24 de Marzo de 2027",
+    "successTitle": "¡Gracias por confirmar!",
+    "successMessage": "Hemos recibido tu respuesta con muchísimo cariño. Nos hará inmensamente felices celebrar contigo este día tan especial."
+  },
+  "dressCode": {
+    "eyebrow": "Código de Vestimenta",
+    "title": "Elegante · Formal",
+    "note": "Damas: vestido largo o de cóctel. Caballeros: terno formal.",
+    "reserved": "Se reserva el color dorado y el blanco para los novios."
+  },
+  "noKids": {
+    "eyebrow": "Solo Adultos",
+    "title": "No niños",
+    "message": "Con todo nuestro cariño, hemos pensado en una celebración únicamente para adultos, para que todos puedan disfrutar sin preocupaciones. Gracias por comprenderlo."
+  },
+  "gifts": {
+    "eyebrow": "Mesa de Regalos",
+    "title": "Un detalle con cariño",
+    "message": "Tu presencia es nuestro regalo más valioso. Si además deseas obsequiarnos algo, un aporte para nuestra luna de miel será recibido con todo el corazón.",
+    "methods": [
+      {
+        "label": "Yape",
+        "holder": "Ron & Mish",
+        "value": "919 295 185",
+        "hint": "Busca el número o escanea en la app Yape"
+      },
+      {
+        "label": "Plin",
+        "holder": "Ron & Mish",
+        "value": "919 295 185",
+        "hint": "Disponible desde tu app bancaria"
+      },
+      {
+        "label": "Cuenta de Ahorros · Soles — BCP",
+        "holder": "Ron & Mish",
+        "value": "191-1234567-0-11",
+        "hint": "Banco de Crédito del Perú"
+      },
+      {
+        "label": "Código Interbancario (CCI)",
+        "holder": "Ron & Mish",
+        "value": "00219100123456701199",
+        "hint": "Para transferencias desde otros bancos"
+      }
+    ]
+  },
+  "audio": {
+    "src": "audio/ambient.mp3",
+    "label": "Música ambiental"
+  }
+}
