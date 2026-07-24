@@ -95,17 +95,29 @@ simplemente no suena.
 El sistema de diseño (paleta, tipografía, componentes) está documentado en
 [`DESIGN.md`](DESIGN.md).
 
-## ☁️ Despliegue (hosting estático)
+## ☁️ Despliegue
 
-El build genera una carpeta `dist/` estática, lista para:
+### GitHub Pages (configurado)
 
-- **Netlify** — arrastra `dist/`, o conecta el repo (build: `npm run build`,
-  publish: `dist`).
-- **Vercel** — framework preset **Vite**, sin configuración extra.
-- **GitHub Pages** — publica el contenido de `dist/`.
+Guía completa paso a paso en [`DEPLOY.md`](DEPLOY.md). En resumen:
 
-`vite.config.js` usa `base: './'` (rutas relativas), por lo que funciona
-también en subcarpetas.
+```bash
+# 1) sube el proyecto a un repo de GitHub (una vez)
+# 2) publica:
+npm run deploy
+```
+
+Esto compila y publica `dist/` en la rama `gh-pages`. Luego activa
+**Settings → Pages → Deploy from a branch → `gh-pages`**. Tu sitio:
+`https://<usuario>.github.io/<repo>/`.
+
+### Otros hostings estáticos
+
+El build genera una carpeta `dist/` lista para **Netlify** (build:
+`npm run build`, publish: `dist`) o **Vercel** (preset **Vite**).
+
+`vite.config.js` usa `base: './'` (rutas relativas), por lo que funciona en
+cualquier subcarpeta o dominio.
 
 ---
 
