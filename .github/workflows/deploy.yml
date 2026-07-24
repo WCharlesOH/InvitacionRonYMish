@@ -21,9 +21,11 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
-      - run: npm ci
+      # `npm install` (not `npm ci`) avoids a known strictness bug with
+      # Rolldown/Rollup platform-native binaries on Linux runners.
+      - run: npm install --no-audit --no-fund
       - run: npm run build
         # Si conectas el RSVP a Google Sheets, añade la URL como "secret"
         # del repo (Settings → Secrets → Actions) y descomenta:
